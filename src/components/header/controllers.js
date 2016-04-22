@@ -1,4 +1,4 @@
-export default class HeaderClass {
+export default class HeaderController {
   constructor($scope, $http, $log) {
     'ngInject';
     this.$scope = $scope;
