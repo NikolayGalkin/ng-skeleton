@@ -16,6 +16,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel?presets=es2015', exclude: /node_modules/ },
       { test: /\.html$/, loader: 'html' },
+      { test: /\.less/, loader: ExtractTextPlugin.extract('style', 'css!less?sourceMap') },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') },
       { test: /\.(woff2?|ttf|eot|svg)(.*)?$/, loader: "file?name=fonts/[name].[ext]" }
     ]

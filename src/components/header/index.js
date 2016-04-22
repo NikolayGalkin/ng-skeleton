@@ -1,4 +1,7 @@
 import ng from 'angular';
 
-ng.module('app.components.header', [])
-  .directive('header', HeaderComponent);
+import HeaderComponent from './components';
+
+export default ng.module('app.components.header', [])
+  .directive('appHeader', HeaderComponent)
+  .name;
